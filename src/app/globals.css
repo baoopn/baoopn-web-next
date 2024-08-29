@@ -16,6 +16,8 @@
   --primary-pink: #de7e85;
   --dark-pink: #784447;
   --less-dark-pink: #9e595d;
+  --abstract-light: rgba(255, 245, 235, 0.8);
+  --abstract-dark: rgba(207, 187, 176, 0.8);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +26,8 @@
     --background-start-rgb: 17, 17, 17;
     --background-end-rgb: 17, 17, 17;
     --background-secondary-rgb: 31, 41, 55;
+    --abstract-light: rgba(31, 41, 55, 0.8);
+    --abstract-dark: rgba(17, 17, 17, 0.5);
   }
 }
 
@@ -151,4 +155,15 @@ html {
 
 .drop-text:nth-child(4) {
   animation-delay: 1s;
+}
+
+.abstract-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(140deg, var(--abstract-dark) 5%, var(--abstract-light) 50%, var(--abstract-dark) 95%);
+  z-index: -1;
+  pointer-events: none;
 }

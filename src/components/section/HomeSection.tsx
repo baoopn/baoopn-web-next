@@ -45,7 +45,8 @@ const HomeSection = () => {
   }, []);
 
   return (
-    <section id="home" className={`flex flex-col items-center justify-center min-h-screen text-center p-4 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <section id="home" className={`relative flex flex-col items-center justify-center min-h-screen text-center p-4 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      <div className="abstract-background"></div>
       <div className="w-32 h-32 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-[var(--primary-pink)] drop-text">
         <Image
           src={profilePic}
@@ -61,7 +62,7 @@ const HomeSection = () => {
       <p className="mt-2 drop-text">A full-stack web and app developer</p>
       <p className="mt-6 text-gray-500 drop-text">Welcome to my personal website!</p>
       {track.isPlaying && (
-        <div className="flex flex-col mt-2 items-center justify-center drop-text">
+        <div className="flex flex-col mt-2 max-w-4xl items-center justify-center drop-text">
           <div className="text-gray-500">
             Currently listening:&nbsp;
             <a href={track.songUrl} className="hover:underline" target="_blank">

@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import profilePic from '@/img/profile2.jpg'
-import { useEffect, useState, useRef } from "react";
-import { CURRENTLY_PLAYING_ENDPOINT } from "@/app/constants";
-import PlayingAnimation from "@/components/Spotify/PlayingAnimation";
+import Image from 'next/image';
+import profilePic from '@/img/profile2.jpg';
+import { useEffect, useState, useRef } from 'react';
+import { CURRENTLY_PLAYING_ENDPOINT } from '@/app/constants';
+import PlayingAnimation from '@/components/Spotify/PlayingAnimation';
 
 const HomeSection = () => {
   const [track, setTrack] = useState({
@@ -46,7 +46,7 @@ const HomeSection = () => {
 
   return (
     <section id="home" className={`flex flex-col items-center justify-center min-h-screen text-center p-4 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-      <div className="w-32 h-32 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-[var(--primary-pink)]">
+      <div className="w-32 h-32 md:w-48 md:h-48 relative rounded-full overflow-hidden border-4 border-[var(--primary-pink)] drop-text">
         <Image
           src={profilePic}
           alt="Bao Nguyen"
@@ -57,11 +57,11 @@ const HomeSection = () => {
           className="rounded-full"
         />
       </div>
-      <h1 className="mt-4 text-3xl md:text-4xl font-bold">I&apos;m Bao Nguyen</h1>
-      <p className="mt-2">A full-stack web and app developer</p>
-      <p className="mt-6 text-gray-500">Welcome to my personal website!</p>
+      <h1 className="mt-4 text-3xl md:text-4xl font-bold drop-text">I&apos;m Bao Nguyen</h1>
+      <p className="mt-2 drop-text">A full-stack web and app developer</p>
+      <p className="mt-6 text-gray-500 drop-text">Welcome to my personal website!</p>
       {track.isPlaying && (
-        <div className="flex flex-col mt-2 items-center justify-center">
+        <div className="flex flex-col mt-2 items-center justify-center drop-text">
           <div className="text-gray-500">
             Currently listening:&nbsp;
             <a href={track.songUrl} className="hover:underline" target="_blank">
@@ -73,7 +73,7 @@ const HomeSection = () => {
         </div>
       )}
     </section>
-  )
-}
+  );
+};
 
 export default HomeSection;

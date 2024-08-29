@@ -119,3 +119,36 @@ html {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Home Section */
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drop-text {
+  opacity: 0;
+  animation: drop 0.5s forwards;
+}
+
+.drop-text:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+.drop-text:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.drop-text:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.drop-text:nth-child(4) {
+  animation-delay: 1s;
+}

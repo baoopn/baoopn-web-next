@@ -5,7 +5,7 @@ import {FaEnvelope, FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa";
 
 const AboutSection = () => {
 	return (
-		<section id="about" className="min-h-screen flex items-center justify-center p-4">
+		<section id="about" className="min-h-screen flex items-center justify-center p-4 pb-20">
 			<div className="max-w-4xl mx-auto text-center pt-20">
 				<h2 className="text-4xl font-semibold mb-4">About Me</h2>
 				<p className="mt-4 mb-4 text-justify">

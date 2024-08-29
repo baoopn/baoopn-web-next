@@ -16,6 +16,10 @@ const customTheme = extendTheme({
       },
     },
   },
+  fonts: {
+    body: "Ubuntu Mono, monospace",
+    heading: "Ubuntu Mono, monospace",
+  },
 });
 
 const NowListening = () => {
@@ -24,6 +28,7 @@ const NowListening = () => {
       <Head>
         <title>What&apos;s Bao is listening to?</title>
         <link rel="icon" href="https://cdn.baoopn.com/data/img/baoo_spotify.ico"/>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet" />
       </Head>
       <Box textAlign="right" p={3}>
         <ColorModeSwitcher/>

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -11,7 +12,7 @@
   --background-end-rgb: 255, 245, 235;
   --background-secondary-rgb: 255, 245, 235;
   --light-background: #fff5eb;
-  --dark-background: #171717;
+  --dark-background: #111111;
   --primary-pink: #de7e85;
   --dark-pink: #784447;
   --less-dark-pink: #9e595d;
@@ -20,8 +21,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 23, 23, 23;
-    --background-end-rgb: 23, 23, 23;
+    --background-start-rgb: 17, 17, 17;
+    --background-end-rgb: 17, 17, 17;
     --background-secondary-rgb: 31, 41, 55;
   }
 }
@@ -29,6 +30,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-start-rgb));
+  font-size: large;
 }
 
 @layer utilities {

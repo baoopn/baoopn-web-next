@@ -45,8 +45,8 @@ export default function Navbar() {
               More <ChevronDown className="ml-1 h-4 w-4" />
             </button>
             <div className="absolute right-0 mt-2 w-48 bg-[var(--less-dark-pink)] rounded-md shadow-lg py-1 z-10 hidden group-focus-within:block">
-              <Link href="/listening" className="block px-4 py-2 text-sm hover:bg-[var(--dark-pink)] ">Now Listening</Link>
-              <Link href="/resume" className="block px-4 py-2 text-sm hover:bg-[var(--dark-pink)] ">Resume</Link>
+              <Link href="/listening" className="block px-4 py-2 hover:bg-[var(--dark-pink)] ">Now Listening</Link>
+              <Link href="/resume" className="block px-4 py-2 hover:bg-[var(--dark-pink)] ">Resume</Link>
             </div>
           </div>
         </div>

@@ -58,12 +58,12 @@ const HomeSection = () => {
         />
       </div>
       <h1 className="mt-4 text-3xl md:text-4xl font-bold">I&apos;m Bao Nguyen</h1>
-      <p className="mt-2 text-lg md:text-xl text-gray-700">A full-stack web and app developer.</p>
-      <p className="mt-4 text-md md:text-lg text-gray-500">Welcome to my personal website!</p>
+      <p className="mt-2">A full-stack web and app developer</p>
+      <p className="mt-6 text-gray-500">Welcome to my personal website!</p>
       {track.isPlaying && (
-        <div className="flex flex-col items-center justify-center">
-          <div className="mt-4 text-md md:text-lg text-gray-500">
-            I&apos;m listening to&nbsp;
+        <div className="flex flex-col mt-2 items-center justify-center">
+          <div className="text-gray-500">
+            Currently listening:&nbsp;
             <a href={track.songUrl} className="hover:underline" target="_blank">
               {track.title} by {track.artist}
             </a>

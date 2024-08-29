@@ -146,15 +146,19 @@ html {
 }
 
 .drop-text:nth-child(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.25s;
 }
 
 .drop-text:nth-child(3) {
-  animation-delay: 0.75s;
+  animation-delay: 0.5s;
 }
 
 .drop-text:nth-child(4) {
-  animation-delay: 1s;
+  animation-delay: 0.6s;
+}
+
+.drop-text:nth-child(5) {
+  animation-delay: 0.9s;
 }
 
 .abstract-background {

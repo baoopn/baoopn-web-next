@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Website
+
+This is the repository for my personal website, built with [Next.js](https://nextjs.org/) using TypeScript (`.tsx`) and styled with [Tailwind CSS](https://tailwindcss.com/). The website serves as a portfolio where you can find information about me, including my short biography, projects, resume, and more.
+
+## Features
+
+- **Biography:** Learn more about who I am and what I do.
+- **Projects:** Explore the projects I've worked on, including both professional and personal endeavors.
+- **Resume:** View or download my latest resume.
+- **Spotify Integration:** The website features a dedicated page that displays the music I'm currently playing on Spotify as well as my recently played tracks. This feature is powered by a custom API server.
+
+## Spotify API Integration
+
+The Spotify integration is handled by a simple API server that I created to manage requests to the Spotify API. If you're interested in how this works, feel free to check out the [Spotify API server repository](https://github.com/baoopn/spotify-api) on GitHub.
+
+## Technologies Used
+
+- **[Next.js](https://nextjs.org/):** A React framework for server-rendered and statically generated web applications.
+- **[TypeScript](https://www.typescriptlang.org/):** A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+- **[Tailwind CSS](https://tailwindcss.com/):** A utility-first CSS framework that provides low-level building blocks for designing custom UI without writing custom CSS.
+
+## Live Website
+
+You can visit the live website at [baoopn.github.io](https://baoopn.github.io) or [home.baoopn.com](https://home.baoopn.com/).
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/baoopn/baoopn.github.io.git
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Navigate to the project directory:**
+   ```bash
+   cd baoopn.github.io
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+5. **Visit the website:**
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the website in action.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to customize this website to make it your own. If you have any questions or suggestions, please don't hesitate to reach out to me. I hope you enjoy building your personal website with Next.js! 🚀

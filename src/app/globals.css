@@ -12,22 +12,22 @@
   --background-end-rgb: 255, 245, 235;
   --background-secondary-rgb: 255, 245, 235;
   --light-background: #fff5eb;
-  --dark-background: #111111;
+  --dark-background: #171717;
   --primary-pink: #de7e85;
   --dark-pink: #784447;
   --less-dark-pink: #9e595d;
-  --abstract-light: rgba(255, 245, 235, 0.8);
-  --abstract-dark: rgba(207, 187, 176, 0.8);
+  --abstract-light: rgba(255, 250, 248, 0.8);
+  --abstract-dark: rgba(255, 245, 235, 0.8);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 17, 17, 17;
-    --background-end-rgb: 17, 17, 17;
+    --background-start-rgb: 23, 23, 23;
+    --background-end-rgb: 23, 23, 23;
     --background-secondary-rgb: 31, 41, 55;
     --abstract-light: rgba(31, 41, 55, 0.8);
-    --abstract-dark: rgba(17, 17, 17, 0.5);
+    --abstract-dark: rgba(23, 23, 23, 0.5);
   }
 }
 
@@ -167,7 +167,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(140deg, var(--abstract-dark) 5%, var(--abstract-light) 50%, var(--abstract-dark) 95%);
+  background: radial-gradient(circle at center 40%, var(--abstract-light) 0%, var(--abstract-dark) 50%);
   z-index: -1;
   pointer-events: none;
 }

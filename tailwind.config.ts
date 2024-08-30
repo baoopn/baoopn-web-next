@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ['"IBM Plex Mono"', 'monospace'],
+        // mono: ['"IBM Plex Mono"', 'monospace'],
+        // mono: ['"Fira Mono"', 'monospace'],
+        mono: ['"Ubuntu Mono"', 'monospace'],
       },
     },
   },

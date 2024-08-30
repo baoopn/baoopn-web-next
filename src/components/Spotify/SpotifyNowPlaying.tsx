@@ -58,21 +58,24 @@ const SpotifyNowPlaying = () => {
           </Stack>
           {!track.isPlaying &&
             <Box p={4} borderRadius="lg" borderWidth={1}>
-              <Stack direction="column" spacing={1} align="center">
+              <Stack direction="column" spacing={1} align="center" textAlign="center">
                 <Image
-                  src={`https://cdn.baoopn.com/data/img/Baoo.png`}
+                  src={`https://cdn.baoopn.com/data/img/Baoo-404.png`}
                   alt={`Bao's Image`}
                   width={72}
                   height={72}
-                  borderRadius="md"
+                  borderRadius="full"
+                  backgroundColor="var(--primary-pink)"
+                  border={`6px solid var(--primary-pink)`}
                 />
                 <Text
                   fontWeight="semibold"
                   fontSize="lg"
                   width="full"
                   color="alph"
+                  mt={4}
                 >
-                  Bao isn&apos;t listening to anything right now.
+                  Bao isn&apos;t listening right now.
                 </Text>
               </Stack>
             </Box>
@@ -111,6 +114,7 @@ const SpotifyNowPlaying = () => {
                       color="gray.500"
                       isTruncated
                       alignSelf="self-start"
+                      mt={-3}
                     >
                       {track.artist}
                     </Text>

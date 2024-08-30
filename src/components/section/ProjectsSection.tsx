@@ -4,7 +4,7 @@ import ProjectCard from '@/components/component/ProjectCard'
 
 const ProjectsSection = () => {
 	return (
-		<section id="projects" className="min-h-screen pb-8 px-4">
+		<section id="projects" className="min-h-screen pb-20 px-4">
 			<div className="max-w-4xl mx-auto text-center pt-20">
 				<h2 className="text-4xl font-semibold mb-4">Projects</h2>
 				<p className="text-lg mb-8">Projects that I have been worked on</p>

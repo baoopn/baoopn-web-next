@@ -55,14 +55,14 @@ const SpotifyRecentTracks = () => {
             <Text fontWeight="semibold">Recently Played</Text>
           </Stack>
           {tracks.map((track, index) => (
-            <Box key={index} p={2} borderRadius="lg" borderWidth={1}>
-              <Stack direction="row" spacing={4} align="center">
+            <Box key={index} py={1} px={2} borderRadius="lg" borderWidth={1}>
+              <Stack direction="row" spacing={3} align="center">
                 <Image
                   alt={`${track.title} album art`}
                   src={track.albumImageUrl}
                   width={12}
                   height={12}
-                  borderRadius="sm"
+                  borderRadius="md"
                 />
                 <Stack spacing={0} overflow="hidden">
                   <Tooltip label={track.title} hasArrow>

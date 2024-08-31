@@ -57,6 +57,8 @@ const AboutSection = () => {
 						width={600}
 						height={600}
 						className="rounded-md"
+						style={{width: 'auto', height: 'auto'}}
+						priority
 					/>
 				</div>
 			</div>

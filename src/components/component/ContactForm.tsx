@@ -1,11 +1,12 @@
 // src/components/ContactForm.tsx
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { FaEnvelope, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import {LEAVE_MESSAGE_ENDPOINT} from "@/app/constants";
 
 export default function ContactForm() {
 	const [name, setName] = useState("");
@@ -56,10 +57,11 @@ export default function ContactForm() {
 			email,
 			subject: subject || "(No Subject)",
 			message,
+			chatId: process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID,
 		};
 
 		try {
-			const response = await fetch("https://message.nbphuc.io.vn/msg/telegram", {
+			const response = await fetch(LEAVE_MESSAGE_ENDPOINT, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

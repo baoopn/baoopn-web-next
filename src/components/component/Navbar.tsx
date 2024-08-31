@@ -1,5 +1,3 @@
-// src/components/component/Navbar.tsx
-
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, ChevronDown, X } from 'lucide-react'
@@ -24,6 +22,7 @@ export default function Navbar() {
               width={36}
               height={36}
               className="rounded-full"
+              priority
             />
           </div>
           <Image
@@ -31,6 +30,7 @@ export default function Navbar() {
             alt="Bao Nguyen"
             width={110}
             height={36}
+            priority
           />
         </Link>
 

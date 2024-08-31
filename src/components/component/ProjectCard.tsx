@@ -2,6 +2,7 @@
 
 import { FaGithub, FaLink } from 'react-icons/fa'
 import Image from "next/image";
+import React from "react";
 
 interface ProjectCardProps {
   title: string
@@ -77,6 +78,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           style={{ maxHeight: '60vh' }}
           width={1000}
           height={1000}
+          priority
         />
       }
     </div>

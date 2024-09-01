@@ -21,7 +21,7 @@ The Spotify integration is handled by a simple API server that I created to mana
 
 ## Live Website
 
-You can visit the live website at [baoopn.github.io](https://baoopn.github.io) or [home.baoopn.com](https://home.baoopn.com/).
+You can visit the live website at [baoopn.github.io](https://baoopn.github.io).
 
 ## Getting Started
 

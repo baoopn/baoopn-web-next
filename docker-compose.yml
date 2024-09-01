@@ -1,0 +1,23 @@
+services:
+  web:
+    container_name: ${DOCKER_IMAGE_NAME}
+    image: ${DOCKER_IMAGE_NAME}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      PORT: ${PORT}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID}
+      IMAGE_HOSTNAME: ${IMAGE_HOSTNAME}
+      IMAGE_PATH: ${IMAGE_PATH}
+      CURRENTLY_PLAYING_ENDPOINT: ${CURRENTLY_PLAYING_ENDPOINT}
+      RECENTLY_PLAYED_ENDPOINT: ${RECENTLY_PLAYED_ENDPOINT}
+      LEAVE_MESSAGE_ENDPOINT: ${LEAVE_MESSAGE_ENDPOINT}
+      SPOTIFY_CLIENT_ID: ${SPOTIFY_CLIENT_ID}
+      SPOTIFY_CLIENT_SECRET: ${SPOTIFY_CLIENT_SECRET}
+      SPOTIFY_REFRESH_TOKEN: ${SPOTIFY_REFRESH_TOKEN}
+    command: npm start
+    restart: unless-stopped

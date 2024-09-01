@@ -1,5 +1,4 @@
 import dotenv from 'dotenv';
-import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
 
 dotenv.config();
 
@@ -28,9 +27,5 @@ const nextConfig = {
     NEXT_SPOTIFY_REFRESH_TOKEN: process.env.SPOTIFY_REFRESH_TOKEN,
   },
 };
-
-if (process.env.NODE_ENV === 'development') {
-  await setupDevPlatform();
-}
 
 export default nextConfig;

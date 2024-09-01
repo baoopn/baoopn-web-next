@@ -1,10 +1,11 @@
 import dotenv from 'dotenv';
+import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
 
 dotenv.config();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // output: 'export',
   images: {
     remotePatterns: [
       {
@@ -22,7 +23,14 @@ const nextConfig = {
     NEXT_PUBLIC_CURRENTLY_PLAYING_ENDPOINT: process.env.CURRENTLY_PLAYING_ENDPOINT,
     NEXT_PUBLIC_RECENTLY_PLAYED_ENDPOINT: process.env.RECENTLY_PLAYED_ENDPOINT,
     NEXT_PUBLIC_LEAVE_MESSAGE_ENDPOINT: process.env.LEAVE_MESSAGE_ENDPOINT,
+    NEXT_SPOTIFY_CLIENT_ID: process.env.SPOTIFY_CLIENT_ID,
+    NEXT_SPOTIFY_CLIENT_SECRET: process.env.SPOTIFY_CLIENT_SECRET,
+    NEXT_SPOTIFY_REFRESH_TOKEN: process.env.SPOTIFY_REFRESH_TOKEN,
   },
 };
+
+if (process.env.NODE_ENV === 'development') {
+  await setupDevPlatform();
+}
 
 export default nextConfig;

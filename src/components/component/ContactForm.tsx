@@ -16,6 +16,7 @@ export default function ContactForm() {
 	const [alertMessage, setAlertMessage] = useState("");
 	const [alertType, setAlertType] = useState<"success" | "error" | "">("");
 	const [errors, setErrors] = useState({ name: "", email: "", message: "" });
+	const [loading, setLoading] = useState(false); // New loading state
 
 	const validateForm = () => {
 		const newErrors: any = {};
@@ -52,6 +53,8 @@ export default function ContactForm() {
 			return;
 		}
 
+		setLoading(true); // Set loading to true before fetch
+
 		const data = {
 			name,
 			email,
@@ -85,6 +88,8 @@ export default function ContactForm() {
 			console.error("Error sending message:", error);
 			setAlertMessage("An error occurred. Please try again later.");
 			setAlertType("error");
+		} finally {
+			setLoading(false); // Reset loading state after fetch
 		}
 	};
 
@@ -152,8 +157,12 @@ export default function ContactForm() {
 								{alertMessage}
 							</div>
 						)}
-						<Button type="submit" className="bg-[var(--primary-pink)] hover:bg-[var(--less-dark-pink)] text-white">
-							Send Message
+						<Button 
+							type="submit" 
+							className="bg-[var(--primary-pink)] hover:bg-[var(--less-dark-pink)] text-white" 
+							disabled={loading} // Disable button when loading
+						>
+							{loading ? "Sending..." : "Send Message"}
 						</Button>
 					</form>
 				</div>

@@ -57,7 +57,7 @@ const SpotifyNowPlaying = () => {
       {loading ? ( // Show spinner while loading
         <Flex direction="column" alignItems="center" justifyContent="center" height="100%">
           <Spinner size="md" />
-          <Text mt={2}>Loading Recent Tracks...</Text>
+          <Text mt={2}>Loading Current Track...</Text>
         </Flex>
       ) : (
         <>

@@ -10,7 +10,7 @@ import Footer from "@/components/section/Footer";
 
 const Home = () => {
 	return (
-		<div className="relative min-h-screen flex flex-col font-mono">
+		<div className="relative min-h-screen flex flex-col font-sans_serif">
 			<Head>
 				<title>All About Bao!</title>
 				<link rel="icon" href="https://cdn.baoopn.com/data/img/favicon.ico" />

@@ -12,7 +12,7 @@ export default function Navbar() {
   }, [isOpen])
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[var(--dark-pink)] text-white p-4 z-50 shadow-md font-mono">
+    <nav className="fixed top-0 left-0 w-full bg-[var(--dark-pink)] text-white p-4 z-50 shadow-md font-sans_serif">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-[var(--primary-pink)] rounded-full flex items-center justify-center">

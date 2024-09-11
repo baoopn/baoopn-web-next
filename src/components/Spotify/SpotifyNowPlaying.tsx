@@ -68,7 +68,7 @@ const SpotifyNowPlaying = () => {
           )}
           {/* Render the Box only if loading is false and no error occurred */}
           {!error && (
-            <Stack width="full" mb={track.isPlaying ? 2 : 4} spacing={3}>
+            <Stack width="full" mb={track.isPlaying ? 2 : 4} spacing={2}>
               <Stack spacing={2} direction="row" align="center">
                 <SpotifyLogo />
                 <Text fontWeight="semibold">{track.isPlaying ? 'Now Playing' : 'Currently Offline'}</Text>
@@ -118,7 +118,7 @@ const SpotifyNowPlaying = () => {
                         <Link href={track.songUrl} alignSelf="self-start" isExternal>
                           <Text
                             fontWeight="semibold"
-                            fontSize="x-large"
+                            fontSize="lg"
                             width="full"
                             isTruncated
                             color="alph"
@@ -131,8 +131,9 @@ const SpotifyNowPlaying = () => {
                         <Text
                           color="gray.500"
                           isTruncated
+                          fontSize="md"
                           alignSelf="self-start"
-                          mt={-3}
+                          mt={-2}
                         >
                           {track.artist}
                         </Text>

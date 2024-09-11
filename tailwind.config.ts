@@ -10,8 +10,10 @@ const config: Config = {
     extend: {
       fontFamily: {
         // mono: ['"IBM Plex Mono"', 'monospace'],
-        // mono: ['"Fira Mono"', 'monospace'],
-        mono: ['"Ubuntu Mono"', 'monospace'],
+        mono: ['"Fira Mono"', 'monospace'],
+        // mono: ['"Ubuntu Mono"', 'monospace'],
+        sans: ['"Inter"', 'sans-serif'],
+        sans_serif: ['"Comfortaa"', 'sans-serif'],
       },
     },
   },

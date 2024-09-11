@@ -67,13 +67,13 @@ const SpotifyRecentTracks = () => {
           )}
           {/* Render the Box only if loading is false and no error occurred */}
           {!error && (
-            <Stack width="full" spacing={3}>
+            <Stack width="full" spacing={2}>
               <Stack spacing={2} direction="row" align="center">
                 <SpotifyLogo />
                 <Text fontWeight="semibold">Recently Played</Text>
               </Stack>
               {tracks.map((track, index) => (
-                <Box key={index} py={1} px={2} borderRadius="lg" borderWidth={1}>
+                <Box key={index} py={2} px={2} borderRadius="lg" borderWidth={1}>
                   <Stack direction="row" spacing={3} align="center">
                     <Image
                       alt={`${track.title} album art`}
